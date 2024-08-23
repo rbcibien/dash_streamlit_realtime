@@ -1,5 +1,5 @@
-from utils import get_jira_response
-from utils import DOMAIN, EMAIL, AUTH_KEY
+from .utils import get_jira_response
+from .utils import DOMAIN, EMAIL, AUTH_KEY
 
 # JIRA API credentials
 email = EMAIL
