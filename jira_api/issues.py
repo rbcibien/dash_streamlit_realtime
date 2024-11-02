@@ -26,6 +26,7 @@ def transform_issues_to_dataframe(start_date:str, end_date:str):
             "project_key": issue['fields']['project']['key'],
             "project_self": issue['fields']['project']['self'],
             "project_name": issue['fields']['project']['name'],
+            'issue_type': issue['fields']['issuetype']['name'],
             'worklog_hours': issue_worklog / 3600,
             'worklog_start': datetime.strptime(worklog_start, '%Y-%m-%dT%H:%M:%S.%f%z')
         }
